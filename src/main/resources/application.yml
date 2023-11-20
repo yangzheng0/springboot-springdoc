@@ -1,0 +1,22 @@
+springdoc:
+  api-docs:
+    enabled: true
+  info:
+    title: '测试'
+    description: '测试'
+    version: 'v1.0.0'
+    contact:
+      name: xiaoyang
+      email: 1069958530@qq.com
+      url: http://localhost:8081/test
+  components:
+    security-schemes:
+      apiKey:
+        type: APIKEY
+        in: HEADER
+        name: "token"
+  group-configs:
+    - group: '测试接口'
+      packages-to-scan: com.example.springdoc
+server:
+  port: 8081
